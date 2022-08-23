@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+     All of these following methods are called by a button click
+     */
     public void findSum(View view){
         EditText number1 = findViewById(R.id.num1);
         EditText number2 = findViewById(R.id.num2);
