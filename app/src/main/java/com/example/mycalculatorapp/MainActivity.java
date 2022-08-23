@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = findViewById(R.id.num2);
         TextView numSum = findViewById(R.id.answer);
 
-        int num1 = Integer.parseInt((number1.getText().toString()));
-        int num2 = Integer.parseInt((number2.getText().toString()));
-        int sum = num1 + num2;
+        double num1 = Integer.parseInt((number1.getText().toString()));
+        double num2 = Integer.parseInt((number2.getText().toString()));
+        double sum = num1 + num2;
 
         numSum.setText("" + sum);
     }
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = findViewById(R.id.num2);
         TextView numProd = findViewById(R.id.answer);
 
-        int num1 = Integer.parseInt((number1.getText().toString()));
-        int num2 = Integer.parseInt((number2.getText().toString()));
-        int product = num1 * num2;
+        double num1 = Integer.parseInt((number1.getText().toString()));
+        double num2 = Integer.parseInt((number2.getText().toString()));
+        double product = num1 * num2;
 
         numProd.setText("" + product);
     }
@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = findViewById(R.id.num2);
         TextView numQuo = findViewById(R.id.answer);
 
-        int num1 = Integer.parseInt((number1.getText().toString()));
-        int num2 = Integer.parseInt((number2.getText().toString()));
-        int quotient = num1 / num2;
+        double num1 = Integer.parseInt((number1.getText().toString()));
+        double num2 = Integer.parseInt((number2.getText().toString()));
+        double quotient = num1 / num2;
 
         numQuo.setText("" + quotient);
     }
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = findViewById(R.id.num2);
         TextView numDiff = findViewById(R.id.answer);
 
-        int num1 = Integer.parseInt((number1.getText().toString()));
-        int num2 = Integer.parseInt((number2.getText().toString()));
-        int difference = num1 = num2;
+        double num1 = Integer.parseInt((number1.getText().toString()));
+        double num2 = Integer.parseInt((number2.getText().toString()));
+        double difference = num1 - num2;
 
         numDiff.setText("" + difference);
     }

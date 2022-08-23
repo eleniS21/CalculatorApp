@@ -18,36 +18,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/green"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/green"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="304dp"
         android:text="TextView"
         android:textColor="@color/green"
         android:textSize="34sp"
@@ -62,6 +38,7 @@
         android:layout_marginBottom="148dp"
         android:backgroundTint="@color/hot_pink"
         android:text="+"
+        android:onClick="findSum"
         android:textColorLink="#732828"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,6 +52,7 @@
         android:layout_marginBottom="148dp"
         android:backgroundTint="@color/hot_pink"
         android:text="-"
+        android:onClick="findDifference"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -87,6 +65,7 @@
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/hot_pink"
         android:text="x"
+        android:onClick="findProduct"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -99,19 +78,32 @@
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/hot_pink"
         android:text="/"
+        android:onClick="findQuotient"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button5"
+    <EditText
+        android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="256dp"
-        android:backgroundTint="@color/hot_pink"
-        android:text="="
-        android:textSize="20sp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="214dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
