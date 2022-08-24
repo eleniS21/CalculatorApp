@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = findViewById(R.id.num2);
         TextView numSum = findViewById(R.id.answer);
 
+
+        if(number1.getText().toString().equals("") || number2.getText().toString().equals("")){
+
+
+        }
         double num1 = Integer.parseInt((number1.getText().toString()));
         double num2 = Integer.parseInt((number2.getText().toString()));
         double sum = num1 + num2;

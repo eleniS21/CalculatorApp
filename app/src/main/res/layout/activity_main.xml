@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#52000000"
     tools:context=".MainActivity">
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="304dp"
-        android:text="TextView"
+        android:text=""
         android:textColor="@color/green"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +38,8 @@
         android:layout_marginStart="116dp"
         android:layout_marginBottom="148dp"
         android:backgroundTint="@color/hot_pink"
-        android:text="+"
         android:onClick="findSum"
+        android:text="+"
         android:textColorLink="#732828"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,8 +52,8 @@
         android:layout_marginStart="228dp"
         android:layout_marginBottom="148dp"
         android:backgroundTint="@color/hot_pink"
-        android:text="-"
         android:onClick="findDifference"
+        android:text="-"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -64,8 +65,8 @@
         android:layout_marginStart="116dp"
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/hot_pink"
-        android:text="x"
         android:onClick="findProduct"
+        android:text="x"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -77,8 +78,8 @@
         android:layout_marginStart="228dp"
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/hot_pink"
-        android:text="/"
         android:onClick="findQuotient"
+        android:text="/"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -90,7 +91,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="140dp"
         android:ems="10"
+        android:hint="First Value"
         android:inputType="numberDecimal"
+        android:textColor="@color/green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,7 +104,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="228dp"
         android:ems="10"
+        android:hint="Second Value"
         android:inputType="numberDecimal"
+        android:textColor="@color/green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
