@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     //Takes the two numbers the user inputs and calculates the sum
     public void findSum(View view){
 
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         //Checks to see if the users first value is null
         // if so, that value will be set to 0.
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        int sum2 = a + b;
+        double sum2 = a + b;
 
             //sets the TextView to print out the sum
         result.setText("" + sum2);
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Takes the two numbers the user inputs and calculates the product
     public void findProduct(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         //Checks for user input error for first value
         try {
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int prod = a * b;
+        double prod = a * b;
 
         //sets TextView to print out product
         result.setText("" + prod);
@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Takes the two numbers the user inputs and calculates the quotient
     public void findQuotient(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         //Checks for possible empty first value from user
         try {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int quot = a / b;
+        double quot = a / b;
 
         //sets the TextView to print out the quotient
         result.setText("" + quot);
@@ -124,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Takes the two numbers the user inputs and calculates the difference
     public void findDifference(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         //Checks for null error in first value
         try {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int diff = a - b;
+        double diff = a - b;
 
         //sets TextView to print out the difference of the values
         result.setText("" + diff);
