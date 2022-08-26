@@ -13,75 +13,108 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    //https://www.youtube.com/watch?v=DLtlJohaYTI
-    EditText editText;
+    //https://www.youtube.com/watch?v=DLtlJohaYTI try catch
+    //https://stackoverflow.com/questions/4841228/after-type-in-edittext-how-to-make-keyboard-disappear keyboard
+    //https://www.youtube.com/watch?v=MC-sSt5VDBc gradient background
+    EditText num1;
+    EditText num2;
+    TextView result;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = (EditText) findViewById(R.id.num1);
+        num1 = (EditText) findViewById(R.id.num1);
+        num2 = (EditText) findViewById(R.id.num2);
+        result = (TextView) findViewById(R.id.answer);
     }
 
     /*
      All of these following methods are called by a button click
      */
     public void findSum(View view){
-        EditText number1 = findViewById(R.id.num1);
-        EditText number2 = findViewById(R.id.num2);
-        TextView numSum = findViewById(R.id.answer);
+        int a = 0;
+        int b = 0;
 
-//        if(TextUtils.isEmpty(editText.getText().toString())){
-//            Toast.makeText(MainActivity.this, "No empty field allowed.", Toast.LENGTH_SHORT).show();
-//        }
-//        else{
-//            Toast.makeText(MainActivity.this, editText.getText().toString(), Toast.LENGTH_SHORT).show();
-//        }
-//
-//        if(number1.getText().toString().equals("") || number2.getText().toString().equals("")){
-//
-//        }
+        try {
+            a = Integer.parseInt(num1.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
 
-        double num1 = Integer.parseInt((number1.getText().toString()));
-        double num2 = Integer.parseInt((number2.getText().toString()));
-        double sum = num1 + num2;
+        }
+        try {
+            b = Integer.parseInt(num2.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
 
-        numSum.setText("" + sum);
+        int sum2 = a + b;
+
+        result.setText("" + sum2);
     }
 
     public void findProduct(View view){
-        EditText number1 = findViewById(R.id.num1);
-        EditText number2 = findViewById(R.id.num2);
-        TextView numProd = findViewById(R.id.answer);
+        int a = 0;
+        int b = 0;
 
-        double num1 = Integer.parseInt((number1.getText().toString()));
-        double num2 = Integer.parseInt((number2.getText().toString()));
-        double product = num1 * num2;
+        try {
+            a = Integer.parseInt(num1.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
 
-        numProd.setText("" + product);
+        try {
+            b = Integer.parseInt(num2.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
+
+        int prod = a * b;
+
+        result.setText("" + prod);
+
     }
 
     public void findQuotient(View view){
-        EditText number1 = findViewById(R.id.num1);
-        EditText number2 = findViewById(R.id.num2);
-        TextView numQuo = findViewById(R.id.answer);
+        int a = 0;
+        int b = 0;
 
-        double num1 = Integer.parseInt((number1.getText().toString()));
-        double num2 = Integer.parseInt((number2.getText().toString()));
-        double quotient = num1 / num2;
+        try {
+            a = Integer.parseInt(num1.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
 
-        numQuo.setText("" + quotient);
+        try {
+            b = Integer.parseInt(num2.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
+
+        int quot = a + b;
+
+        result.setText("" + quot);
     }
 
     public void findDifference(View view){
-        EditText number1 = findViewById(R.id.num1);
-        EditText number2 = findViewById(R.id.num2);
-        TextView numDiff = findViewById(R.id.answer);
+        int a = 0;
+        int b = 0;
 
-        double num1 = Integer.parseInt((number1.getText().toString()));
-        double num2 = Integer.parseInt((number2.getText().toString()));
-        double difference = num1 - num2;
+        try {
+            a = Integer.parseInt(num1.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
 
-        numDiff.setText("" + difference);
+        try {
+            b = Integer.parseInt(num2.getText().toString().trim());
+        } catch (NumberFormatException e) {
+            Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
+        }
+
+        int diff = a + b;
+
+        result.setText("" + diff);
     }
 }

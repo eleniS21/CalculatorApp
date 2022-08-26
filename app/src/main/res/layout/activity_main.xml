@@ -87,6 +87,7 @@
 
     <EditText
         android:id="@+id/num1"
+        android:imeOptions="actionDone"
         android:layout_width="234dp"
         android:layout_height="67dp"
         android:layout_marginStart="88dp"
@@ -101,6 +102,7 @@
 
     <EditText
         android:id="@+id/num2"
+        android:imeOptions="actionDone"
         android:layout_width="234dp"
         android:layout_height="64dp"
         android:layout_marginStart="88dp"
