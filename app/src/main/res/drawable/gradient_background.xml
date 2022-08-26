@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--https://www.youtube.com/watch?v=MC-sSt5VDBc -->
+    <!-- Link is where I found how to make the background gradient -->
+
     <item>
 
         <shape>
