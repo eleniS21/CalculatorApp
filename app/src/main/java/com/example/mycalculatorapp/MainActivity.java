@@ -34,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
      All of these following methods are called by a button click
      */
     public void findSum(View view){
-        int a = 0;
-        int b = 0;
+
+        double a = 0;
+        double b = 0;
 
         try {
             a = Integer.parseInt(num1.getText().toString().trim());
@@ -49,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int sum2 = a + b;
+        double sum2 = a + b;
 
         result.setText("" + sum2);
     }
 
     public void findProduct(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         try {
             a = Integer.parseInt(num1.getText().toString().trim());
@@ -70,15 +71,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int prod = a * b;
+        double prod = a * b;
 
         result.setText("" + prod);
 
     }
 
     public void findQuotient(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         try {
             a = Integer.parseInt(num1.getText().toString().trim());
@@ -92,14 +93,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int quot = a + b;
+        double quot = a / b;
 
         result.setText("" + quot);
     }
 
     public void findDifference(View view){
-        int a = 0;
-        int b = 0;
+        double a = 0;
+        double b = 0;
 
         try {
             a = Integer.parseInt(num1.getText().toString().trim());
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "No empty field allowed.\n\t\tValue set to 0.", Toast.LENGTH_SHORT).show();
         }
 
-        int diff = a + b;
+        double diff = a - b;
 
         result.setText("" + diff);
     }
